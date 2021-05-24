@@ -1,0 +1,32 @@
+POST http://localhost:3000/api/auth/signup
+Content-Type: application/json
+
+{
+    "email": "test@mail.fr",
+    "password": "aaaa"
+}
+###
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "test@mail.fr",
+    "password": "aaaa"
+}
+###
+GET http://localhost:3000/api/sauces
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDkyYzU3OWU4YTZkNDFhYjgxZWNiY2YiLCJpYXQiOjE2MjA4MjE1NDUsImV4cCI6MTYyMDkwNzk0NX0.rrpwGW0mR20lMm-EUo8Va2zyyQj-7RQbLv-gyX6UGds
+
+###
+GET http://localhost:3000/api/sauces/60993ae82bb8622b901dec5f
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDkyYzU3OWU4YTZkNDFhYjgxZWNiY2YiLCJpYXQiOjE2MjA4MjE1NDUsImV4cCI6MTYyMDkwNzk0NX0.rrpwGW0mR20lMm-EUo8Va2zyyQj-7RQbLv-gyX6UGds
+
+###
+PUT http://localhost:3000/api/sauces/609284481895b31b380d2d6f
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDkyYzU3OWU4YTZkNDFhYjgxZWNiY2YiLCJpYXQiOjE2MjAzMDM3NzUsImV4cCI6MTYyMDM5MDE3NX0.TmcbFQvyf_C86f7cRFH1eJitCYcTMFX2gKtMYwZ0Mjw
+Content-Type: application/json
+
+{
+    "name" : "Nouveau nom"
+}
+###
